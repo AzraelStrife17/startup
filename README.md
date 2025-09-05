@@ -1,4 +1,4 @@
-# Your startup name here
+Figuring out startup Name
 
 [My Notes](notes.md)
 

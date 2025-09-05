@@ -1,4 +1,5 @@
 # CS 260 Notes
+I did modify this in vs
 
 [My startup - Simon](https://simon.cs260.click)
 
