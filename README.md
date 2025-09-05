@@ -1,4 +1,4 @@
-Figuring out startup Name
+Theory Crafting website
 
 [My Notes](notes.md)
 
