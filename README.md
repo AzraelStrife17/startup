@@ -18,11 +18,11 @@ A brief description of the application here. Lorem ipsum dolor sit amet, consect
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] Proper use of Markdown
-- [ ] A concise and compelling elevator pitch
-- [ ] Description of key features
-- [ ] Description of how you will use each technology
-- [ ] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
+- [x] Proper use of Markdown: bolded and made heading for readme and uploaded images
+- [x] A concise and compelling elevator pitch: Created an elevator pitch
+- [x] Description of key features: Listed key features to be expected
+- [x] Description of how you will use each technology: gave an explanation of how each technology is implemented
+- [x] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references. uploaded 4 images
 
 ### Elevator pitch
 
@@ -30,7 +30,10 @@ Have you ever spent hours playing a video game just to stare the at the absurd a
 
 
 ### Design
-
+![](Theory_Craft_Login.png)
+![](Theory_Craft_Character_Builder.png)
+![](Theory_Craft_Saved_Builds.png)
+![](Theory_Craft_Search_Builder.png)
 
 
 ### Key features
