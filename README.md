@@ -31,7 +31,7 @@ Have you ever spent hours playing a video game just to stare the at the absurd a
 
 ### Design
 
-![Design image](placeholder.png)
+
 
 ### Key features
 
