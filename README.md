@@ -1,4 +1,4 @@
-# __Theory Crafting__
+# __Theory Craft__
 
 [My Notes](notes.md)
 
@@ -26,37 +26,33 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 ### Elevator pitch
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Have you ever spent hours playing a video game just to stare the at the absurd amount of upgrades or items you can apply to your character just to finally obtain it and realize it is __AWFUL!__ Well fear no more as with __Theory Craft__ you will no longer need to waste time any more. __Theory Craft__ will store the stats of items and skills so that you can plan out your characters build by being able to see your characters stats are without playing the game so you can waste less time testing out useless items and spend more time actually playing. Also for individuals who feel overwhelmed when it comes to building your character fear not as within __Theory Craft__ you can view other users builds and save them to be used as well.
+
 
 ### Design
 
 ![Design image](placeholder.png)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-```mermaid
-sequenceDiagram
-    actor You
-    actor Website
-    You->>Website: Replace this with your design
-```
-
 ### Key features
 
-- Describe your key feature
-- Describe your key feature
-- Describe your key feature
+- Ability to save builds
+- Ability to search up builds
+- Seeing statline (ex current damage with gun and upgrades)
+- A collection items within the game where you can see their stats
 
 ### Technologies
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Description here
-- **CSS** - Description here
-- **React** - Description here
-- **Service** - Description here
-- **DB/Login** - Description here
-- **WebSocket** - Description here
+- **HTML** - Uses an HTML page to login, page to make your builds, and another page to search for other builds
+- **CSS** - Style webpage in a dark color scheme that will not flash bang you at night.
+- **React** - Provides login, display of your builds, display of character builder, and dispay collection of other characters builds
+- **Service** - Backend service with endpoints for:
+      -login
+      -retrieving builds
+      -uploading builds
+- **DB/Login** - Store users, users saved builds, all user builds in database. Register and login users. Redentials stored in database. Can't create your own build unless authenticated.
+- **WebSocket** - As a build is uploaed this will be broadcasted for everyone to be able to view.
 
 ## 🚀 AWS deliverable
 
