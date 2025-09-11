@@ -1,4 +1,4 @@
-Theory Crafting website
+# __Theory Crafting__
 
 [My Notes](notes.md)
 
