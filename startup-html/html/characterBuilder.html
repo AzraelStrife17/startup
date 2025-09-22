@@ -23,23 +23,62 @@
     <main>
         <h1>Character Builder</h1>
         <h2>Skill Tree</h2>
-        <div style="width: 200px; text-align: center; border: 1px solid #aaa; padding: 10px; border-radius: 10px; background-color: #f7f7f7; margin: 20px auto;">
-
+        <div style="width: 1000px; text-align: center; border: 1px solid #aaa; padding: 10px; border-radius: 10px; background-color: #f7f7f7; margin: 20px auto;">
             <div>   
-                <fieldset>
+                <fieldset style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
                     <legend>Action Skill</legend>
-                    <label style="color: #ff0000; font-weight: bold; display: inline-block; margin-right: 10px;">
+                    <label style="color: #ff0000; font-weight: bold;">
                         <input type="radio" id="actionSkill1" name="varRadio" value="radio1"/> Phase Familiar
                     </label>
                     
-                    <label style="color: #15ff00; font-weight: bold; display: inline-block; margin-right: 10px;">
+                    <label style="color: #15ff00; font-weight: bold;">
                         <input type="radio" id="actionSkill2" name="varRadio" value="radio2"/> Incarnate
                     </label>
                     
-                    <label style="color: #0400ff; font-weight: bold; display: inline-block;">
+                    <label style="color: #0400ff; font-weight: bold;">
                         <input type="radio" id="actionSkill3" name="varRadio" value="radio3"/> Dead Ringer
                     </label>
                 </fieldset>
+
+                <div>
+                  <label for="sanguineFiends">Sanguine Fiends</label>
+                  <select id="sanguineFiends" name="varSelect">
+                    <option selected>-</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+
+                  <label for="idleHands">idleHands</label>
+                  <select id="idleHands" name="varSelect">
+                    <option selected>-</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+
+                  <label for="coldIron">Cold Iron</label>
+                  <select id="coldIron" name="varSelect">
+                    <option selected>-</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+
+                  <label for="fellInscription">Fell Inscription</label>
+                  <select id="fellInscription" name="varSelect">
+                    <option selected>-</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
             </div>
         </div>
     </main>
