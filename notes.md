@@ -20,7 +20,7 @@ No problems worked just like it said in the [instruction](https://github.com/web
 
 ## HTML
 
-This was easy. I was careful to use the correct structural elements such as header, footer, main, nav, and form. The links between the three views work great using the `a` element.
+Remember the button type because that may be needed later on when adding technology as well as the <form method = "get" action="characterBuilder.html"> will likely be used as well for when viewing community character builds
 
 The part I didn't like was the duplication of the header and footer code. This is messy, but it will get cleaned up when I get to React.
 
