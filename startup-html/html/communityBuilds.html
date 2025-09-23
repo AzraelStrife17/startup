@@ -22,14 +22,30 @@
 
     <main>
         <h1>Community Builds</h1>
-        <div>Username       |         Build Name          |       Build ID</div>
-        <form method = "get" action="characterBuilder.html">
-            <div>
-                <button type="submit">Zer0           |  Elite Build Endgame Build  |      0123456789</button>
-            </div>
-        </form>
+        <table>
+          <thead>
+            <th>Username | </th>
+            <th>Build Name | </th>
+            <th>Build ID</th>
+          </thead>
+          <tbody>   
+            <form method = "get" action="characterBuilder.html">
+              <tr>
+                <th>
+                  <button type="submit">Zer0</button>
+                </th>
+                <th>
+                  <button type="submit">Elite Endgame Build</button>
+                </th>
+                <th>
+                  <button type="submit">0123456789</button>
+                </th>
+              </tr>
+            </form>
+          </tbody>
+        </table>
 
         <div>
-            <span>Search:</span><input type="text" placeholder="Search for build by username, build name, or build ID"/>
+          <input type="text" placeholder="search for builds by username, buildname, or ID"/>
         </div>
     </main>
