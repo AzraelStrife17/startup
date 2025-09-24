@@ -55,27 +55,27 @@ I am going to use the required technologies in the following ways.
       -retrieving builds
       -uploading builds
 - **DB/Login** - Store users, users saved builds, all user builds in database. Register and login users. Redentials stored in database. Can't create your own build unless authenticated.
-- **WebSocket** - As a build is uploaed this will be broadcasted for everyone to be able to view.
+- **WebSocket** - As a build is uploaded this will be broadcasted for everyone to be able to view.
 
 ## 🚀 AWS deliverable
 
-For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
+For this deliverable I did the following. I checked the box `[x]` created ec2 server and domain and linked them and setup the domain to use https
 
-- [ ] **Server deployed and accessible with custom domain name** - [My server link](https://yourdomainnamehere.click).
+- [x] **Server deployed and accessible with custom domain name** - [[My server link](https://yourdomainnamehere.click](https://theorycraft117.click)).
 
 ## 🚀 HTML deliverable
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **HTML pages** - I did not complete this part of the deliverable.
-- [ ] **Proper HTML element usage** - I did not complete this part of the deliverable.
-- [ ] **Links** - I did not complete this part of the deliverable.
-- [ ] **Text** - I did not complete this part of the deliverable.
-- [ ] **3rd party API placeholder** - I did not complete this part of the deliverable.
-- [ ] **Images** - I did not complete this part of the deliverable.
-- [ ] **Login placeholder** - I did not complete this part of the deliverable.
-- [ ] **DB data placeholder** - I did not complete this part of the deliverable.
-- [ ] **WebSocket placeholder** - I did not complete this part of the deliverable.
+- [x] **HTML pages** - Created  5 html pages being index, characterBuilder, CommunityBuildes, savedBuilds, and about.
+- [x] **Proper HTML element usage** - Demonstarted use of html by creating 5 pages using a variety of differnt htmls. A specific example is the use of a fieldset for the skilltree.
+- [x] **Links** - I did not complete this part of the deliverable. Header allows the ability to switch between different pages as well as clicking on saved builds and community builds will open the character builder to see the build.
+- [x] **Text** - Have text describing different parts and nameing parts for full implementation later.
+- [x] **3rd party API placeholder** - placeholder appearing with the quote on the about.html page.
+- [x] **Images** - Picture on the about.html page.
+- [x] **Login placeholder** - login placeholder on the index.html and all other htmls pages have a placeholder for the user being logged in on the top right of each main section.
+- [x] **DB data placeholder** - login will have a database of all the users, more prevalent placeholder is with community builds and saved build pages as they will store all the different build information
+- [x] **WebSocket placeholder** - community builds are broadcasted to user for everyone to see
 
 ## 🚀 CSS deliverable
 
