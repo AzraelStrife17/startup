@@ -61,7 +61,7 @@ I am going to use the required technologies in the following ways.
 
 For this deliverable I did the following. I checked the box `[x]` created ec2 server and domain and linked them and setup the domain to use https
 
-- [x] **Server deployed and accessible with custom domain name** - [[My server link](https://yourdomainnamehere.click](https://theorycraft117.click)).
+- [x] **Server deployed and accessible with custom domain name** - [[My server link](https://theorycraft117.click).
 
 ## 🚀 HTML deliverable
 
