@@ -49,8 +49,6 @@ main .skill_tree_header{
 }
 
 main .skill_tree{
-    display: flex;
-    justify-content: space-between;
     font-family: "Papyrus", fantasy;
     color: goldenrod;
     border: 5px solid black;
@@ -60,7 +58,21 @@ main .action_skills{
     display: flex;
     justify-content: space-around;
     font-size: 20px;
+    margin-bottom: 15px;
 }
+
+main .skill_row1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+main .skill_row2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
 
 
 footer{
