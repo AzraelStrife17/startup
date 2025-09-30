@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  margin: 0
+}
+
+header {
+  flex: 0 80px;
+  background-color: dimgray;
+  border-bottom: 5px solid black;
+}
+
+header h1{
+  font-family: "Papyrus", fantasy;
+  color:  goldenrod;
+}
+
+header nav menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Papyrus", fantasy;
+  font-size: 20px;
+  color: goldenrod;
+  margin-right: 50px;
+}
+
+header nav menu li a{
+  color: goldenrod;
+  text-decoration: none;
+}
+
+main{
+    background-color: navy;
+}
+
+main h1{
+    font-family: "Papyrus", fantasy;
+    color: goldenrod;
+    text-align: center;
+}
+
+main .skill_tree_header{
+    text-align: center;
+    font-family: "Papyrus", fantasy;
+    color: goldenrod;
+}
+
+main .skill_tree{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Papyrus", fantasy;
+    color: goldenrod;
+    border: 5px solid black;
+}
+
+main .action_skills{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+
+footer{
+  display: flex;
+  background-color: dimgray;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+}
+
+footer .text-reset{
+  color: goldenrod;
+  font-family: "Papyrus", fantasy;
+  font-size: 20px;
+}
+
+footer a{
+  color: goldenrod;
+  font-family: "Papyrus", fantasy;
+  font-size: 20px;
+  text-decoration: none;
+}
