@@ -73,6 +73,11 @@ main .skill_row2{
     margin-bottom: 15px;
 }
 
+main .skill_row3{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
 
 
 footer{
