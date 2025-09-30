@@ -44,6 +44,11 @@ main form input::placeholder{
 main .login_buttons{
   margin-left: 2px;
   width: 150px;
+  height: 30px;
+  font-family: "Papyrus", fantasy;
+  color: white;
+  background-color: slategray;
+  border: 3px solid black;
 }
 
 
