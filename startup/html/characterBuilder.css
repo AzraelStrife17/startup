@@ -141,6 +141,14 @@ main .calculator_header{
   color: goldenrod;
 }
 
+main .calculator_values{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: "Papyrus", fantasy;
+  color: goldenrod;
+}
+
 
 footer{
   display: flex;
