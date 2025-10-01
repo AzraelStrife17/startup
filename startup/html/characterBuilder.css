@@ -79,6 +79,15 @@ main .skill_row3{
     margin-bottom: 15px;
 }
 
+main .single_skill_row{
+    display: flex;
+    justify-content: center;
+}
+
+main .mastery_tree{
+  width: 500px;
+}
+
 
 footer{
   display: flex;
