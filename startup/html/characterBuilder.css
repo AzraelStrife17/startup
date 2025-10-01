@@ -33,6 +33,7 @@ header nav menu li a{
 }
 
 main{
+    flex: 1 calc(100vh - 110px);
     background-color: navy;
     border-bottom: 5px solid black;
 }
