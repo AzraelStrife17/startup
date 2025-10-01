@@ -402,110 +402,125 @@
                       </div>
                     </div>
                   </fieldset>
-
                 </div>
 
             </div>
 
           </fieldset>
 
-        <h2>Equipment</h2>
-        <h3>Weapons</h3>
-        <div>
-          <label for="weapon1">Weapon Slot 1</label>
-              <select id="weapon1" name="varSelect">
-                  <option selected>-</option>
-                  <option>AR</option>
-                  <option>Shotgun</option>
-                  <option>SMG</option>
-                  <option>Pistol</option>
-                  <option>Sniper</option>
-                  </select>
-        </div>
+        <h2 class="equipment_header">Equipment</h2>
 
-        <div> 
-          <label for="weapon2">Weapon Slot 2</label>
-              <select id="weapon2" name="varSelect">
-                  <option selected>-</option>
-                  <option>AR</option>
-                  <option>Shotgun</option>
-                  <option>SMG</option>
-                  <option>Pistol</option>
-                  <option>Sniper</option>
-                  </select>
-        </div>
+        <div class="equipment">
+          
+          <fieldset class="weapons">
+            <legend>Weapons</legend>
+            <div class="weapon_row">
+              <div>
+                <label for="weapon1">Weapon Slot 1</label>
+                    <select id="weapon1" name="varSelect">
+                        <option selected>-</option>
+                        <option>AR</option>
+                        <option>Shotgun</option>
+                        <option>SMG</option>
+                        <option>Pistol</option>
+                        <option>Sniper</option>
+                      </select>
+              </div>
 
-        <div> 
-          <label for="weapon3">Weapon Slot 3</label>
-              <select id="weapon3" name="varSelect">
-                  <option selected>-</option>
-                  <option>AR</option>
-                  <option>Shotgun</option>
-                  <option>SMG</option>
-                  <option>Pistol</option>
-                  <option>Sniper</option>
-                  </select>
-        </div>
+              <div> 
+                <label for="weapon2">Weapon Slot 2</label>
+                    <select id="weapon2" name="varSelect">
+                        <option selected>-</option>
+                        <option>AR</option>
+                        <option>Shotgun</option>
+                        <option>SMG</option>
+                        <option>Pistol</option>
+                        <option>Sniper</option>
+                      </select>
+              </div>
+            </div>
 
-        <div> 
-          <label for="weapon4">Weapon Slot 4</label>
-              <select id="weapon4" name="varSelect">
-                <option selected>-</option>
-                <option>AR</option>
-                <option>Shotgun</option>
-                <option>SMG</option>
-                <option>Pistol</option>
-                <option>Sniper</option>
-                </select>
-        </div>
-      
-      <h3>Utility</h3>
-      <div>
-        <label for="shield">Shield</label>
-            <select id="shield" name="varSelect">
-              <option selected>-</option>
-              <option>Shield 1</option>
-              <option>Shield 2</option>
-              <option>Shield 3</option>
-              <option>Shield 4</option>
-              <option>Shield 5</option>
-            </select>
-      </div>
+            <div class="weapon_row">            
+              <div> 
+                <label for="weapon3">Weapon Slot 3</label>
+                    <select id="weapon3" name="varSelect">
+                        <option selected>-</option>
+                        <option>AR</option>
+                        <option>Shotgun</option>
+                        <option>SMG</option>
+                        <option>Pistol</option>
+                        <option>Sniper</option>
+                        </select>
+              </div>
 
-      <div> 
-        <label for="revKit">Rev Kit</label>
-            <select id="rev Kit" name="varSelect">
-              <option selected>-</option>
-              <option>Rev Kit 1</option>
-              <option>Rev Kit 2</option>
-              <option>Rev Kit 3</option>
-              <option>Rev Kit 4</option>
-              <option>Rev Kit 5</option>
-            </select>
-      </div>
+              <div> 
+                <label for="weapon4">Weapon Slot 4</label>
+                    <select id="weapon4" name="varSelect">
+                      <option selected>-</option>
+                      <option>AR</option>
+                      <option>Shotgun</option>
+                      <option>SMG</option>
+                      <option>Pistol</option>
+                      <option>Sniper</option>
+                      </select>
+              </div>
+            </div>
+          </fieldset>
+        
+          <fieldset class="utility">
+            <legend>Utilities</legend>
+            <div class="util_row">
+              <div>
+                <label for="shield">Shield</label>
+                    <select id="shield" name="varSelect">
+                      <option selected>-</option>
+                      <option>Shield 1</option>
+                      <option>Shield 2</option>
+                      <option>Shield 3</option>
+                      <option>Shield 4</option>
+                      <option>Shield 5</option>
+                    </select>
+              </div>
 
-      <div> 
-        <label for="ordinance">Ordinance</label>
-            <select id="ordinance" name="varSelect">
-              <option selected>-</option>
-              <option>Rocket Launcher</option>
-              <option>Grenade</option>
-              <option>Throwing Knife</option>
-              <option>Minigun</option>
-            </select>
-      </div>
+              <div> 
+                <label for="revKit">Rev Kit</label>
+                    <select id="rev Kit" name="varSelect">
+                      <option selected>-</option>
+                      <option>Rev Kit 1</option>
+                      <option>Rev Kit 2</option>
+                      <option>Rev Kit 3</option>
+                      <option>Rev Kit 4</option>
+                      <option>Rev Kit 5</option>
+                    </select>
+              </div>
+            </div>
+            
+            <div class="util_row">
+              <div> 
+                <label for="ordinance">Ordinance</label>
+                    <select id="ordinance" name="varSelect">
+                      <option selected>-</option>
+                      <option>Rocket Launcher</option>
+                      <option>Grenade</option>
+                      <option>Throwing Knife</option>
+                      <option>Minigun</option>
+                    </select>
+              </div>
 
-      <div> 
-        <label for="classMod">Class Mod</label>
-            <select id="classMod" name="varSelect">
-              <option selected>-</option>
-              <option>Mod 1</option>
-              <option>Mod 2</option>
-              <option>Mod 3</option>
-              <option>Mod 4</option>
-              <option>Mod 5</option>
-            </select>
-      </div>
+              <div> 
+                <label for="classMod">Class Mod</label>
+                    <select id="classMod" name="varSelect">
+                      <option selected>-</option>
+                      <option>Mod 1</option>
+                      <option>Mod 2</option>
+                      <option>Mod 3</option>
+                      <option>Mod 4</option>
+                      <option>Mod 5</option>
+                    </select>
+              </div>
+            </div>
+          </fieldset>
+      </div> 
 
       <h2>Build Numbers Calculated</h2>
       <div>HP: 1000</div>
