@@ -134,6 +134,13 @@ main .util_row{
   justify-content: space-evenly;
 }
 
+main .calculator_header{
+  display: flex;
+  justify-content: center;
+  font-family: "Papyrus", fantasy;
+  color: goldenrod;
+}
+
 
 footer{
   display: flex;
