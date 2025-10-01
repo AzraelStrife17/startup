@@ -34,6 +34,7 @@ header nav menu li a{
 
 main{
     background-color: navy;
+    border-bottom: 5px solid black;
 }
 
 main h1{
@@ -148,6 +149,39 @@ main .calculator_values{
   font-family: "Papyrus", fantasy;
   color: goldenrod;
 }
+
+main .build_descript_header{
+  display: flex;
+  justify-content: center;
+  font-family: "Papyrus", fantasy;
+  color: goldenrod;
+}
+
+main .descript{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+main .description_input{
+  text-align: center;
+  font-family: "Papyrus", fantasy;
+  border: 5px solid black;
+  width: 500px;
+  height: 200px;
+}
+
+main .submit_upload{
+  width: 150px;
+  height: 30px;
+  font-family: "Papyrus", fantasy;
+  color: goldenrod;
+  background-color: dimgray;
+  border: 3px solid black;
+  margin-bottom: 10px;
+}
+
+
 
 
 footer{
