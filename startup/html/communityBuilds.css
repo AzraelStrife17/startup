@@ -57,7 +57,32 @@ main .community_builds_table{
     width: 80%;
     margin: 30px auto;;
     text-align: center;
-    
+}
+
+main .community_builds_table tr, td{
+  border: 3px solid black;
+  background-color: dimgray;
+}
+
+main .community_builds_table button{
+  font-family: "Papyrus", fantasy;
+  font-size: 15px;
+  color:goldenrod;
+  background-color: dimgray;
+}
+
+main .search{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+main .search_input{
+  text-align: center;
+  font-family: "Papyrus", fantasy;
+  border: 5px solid black;
+  width: 500px;
+  height: 20px;
 }
 
 
