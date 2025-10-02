@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TheoryCraft</title>
     <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="savedBuilds.css" />
+
   </head>
   <body>
     <header>
@@ -18,38 +20,36 @@
           <li><a href="about.html">About</a></li>
         </menu>
       </nav>
-      <hr />
     </header>
 
     <main>
-        <span style="float: right;">User Logged In</span>
+        <span class="login_name">User Logged In</span>
         <h1>My Builds</h1>
-        <table>
+        <table class="saved_builds_table">
           <thead>
-            <th>Build Name | </th>
+            <th>Build Name</th>
             <th>Build ID</th>
           </thead>
           <tbody>   
             <form method = "get" action="characterBuilder.html">
               <tr>
-                <th>
+                <td>
                   <button type="submit">My Epic Build 1</button>
-                </th>
-                <th>
+                </td>
+                <td>
                   <button type="submit">0123456789</button>
-                </th>
+                </td>
               </tr>
             </form>
           </tbody>
         </table>
 
-        <div>
-          <input type="text" placeholder="search for your builds"/>
+        <div class="search">
+          <input class="search_input" type="text" placeholder="search for your builds"/>
         </div>
     </main>
 
     <footer>
-      <hr />
       <span class="text-reset">Adam Leishman</span>
       <br />
       <a href="https://github.com/AzraelStrife17/startup">GitHub</a>
