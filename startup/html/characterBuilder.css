@@ -44,6 +44,13 @@ main h1{
     text-align: center;
 }
 
+main .login_name{
+    display: block;
+    font-family: "Papyrus", fantasy;
+    color: goldenrod;
+    text-align: right;
+}
+
 main .skill_tree_header{
     text-align: center;
     font-family: "Papyrus", fantasy;
@@ -93,7 +100,8 @@ main .single_skill_row{
 }
 
 main .mastery_tree{
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
 }
 
 main .equipment_header{
