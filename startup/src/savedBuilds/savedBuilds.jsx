@@ -15,10 +15,10 @@ export function SavedBuilds() {
           <tbody>   
               <tr>
                 <td>
-                  <Link to='/characterBuilder'>My Epic Build 1</Link>
+                  <Link className='buildLink' to='/characterBuilder'>My Epic Build 1</Link>
                 </td>
                 <td>
-                  <Link to='/characterBuilder'>0123456789</Link>
+                  <Link className='buildLink' to='/characterBuilder'>0123456789</Link>
                 </td>
               </tr>
           </tbody>
