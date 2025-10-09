@@ -50,6 +50,10 @@ main h1{
     color: goldenrod;
 }
 
+.loginMain {
+  padding-top: 150px;
+}
+
 main .login_info{
   width: 300px;
   height: 50px;

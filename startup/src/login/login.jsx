@@ -2,7 +2,7 @@ import React from 'react';
 
 export function Login() {
   return (
-    <main>
+    <main className='loginMain'>
       <h1>Welcome to Theory Craft</h1>
       <form method = "get" action="characterBuilder.html">
         <div>
