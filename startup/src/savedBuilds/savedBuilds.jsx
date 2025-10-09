@@ -1,5 +1,6 @@
 import React from 'react';
 import './savedBuilds.css';
+import { Link } from 'react-router-dom';
 
 export function SavedBuilds() {
   return (
@@ -12,16 +13,14 @@ export function SavedBuilds() {
             <th>Build ID</th>
           </thead>
           <tbody>   
-            <form method = "get" action="characterBuilder.html">
               <tr>
                 <td>
-                  <button type="submit">My Epic Build 1</button>
+                  <Link to='/characterBuilder'>My Epic Build 1</Link>
                 </td>
                 <td>
-                  <button type="submit">0123456789</button>
+                  <Link to='/characterBuilder'>0123456789</Link>
                 </td>
               </tr>
-            </form>
           </tbody>
         </table>
 

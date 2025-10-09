@@ -28,9 +28,7 @@ export function CommunityBuilds() {
                   <Link to='/characterBuilder'>0123456789</Link>
                 </td>
               </tr>
-            
-
-            
+              
               <tr>
                 <td>
                   <Link to='/characterBuilder'>Vex</Link>
