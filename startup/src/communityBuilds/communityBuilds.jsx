@@ -2,7 +2,7 @@ import React from 'react';
 
 export function CommunityBuilds() {
   return (
-    <main className="container-fluid bg-secondary text-center">
+    <main>
       <div>community builds displayed here</div>
     </main>
   );
