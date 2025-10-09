@@ -1,14 +1,16 @@
-main h1{
-    font-family: "Papyrus", fantasy;
-    color: goldenrod;
-    text-align: center;
-}
-
 main .login_name{
     display: block;
     font-family: "Papyrus", fantasy;
     color: goldenrod;
     text-align: right;
+    width: 100%;
+}
+
+main h1{
+    font-family: "Papyrus", fantasy;
+    color: goldenrod;
+    text-align: center;
+    margin-top: 0;
 }
 
 main .skill_tree_header{
@@ -24,10 +26,16 @@ main .skill_tree{
 }
 
 main .action_skills{
-    display: flex;
-    justify-content: space-evenly;
     font-size: 20px;
+    border: .5px solid white; 
     margin-bottom: 15px;
+    text-align: center;
+}
+
+main .action_skills .action_skill_content{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
 }
 
 main .skill_row1{
@@ -60,6 +68,8 @@ main .single_skill_row{
 }
 
 main .mastery_tree{
+  text-align: center;
+  border: .1px solid white;
   width: 90%;
   max-width: 500px;
 }
@@ -69,6 +79,7 @@ main .equipment_header{
   justify-content: center;
   font-family: "Papyrus", fantasy;
   color: goldenrod;
+  padding-top: 20px;
 }
 
 main .equipment{
@@ -79,6 +90,7 @@ main .equipment{
 }
 
 main .weapons{
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -92,6 +104,7 @@ main .weapon_row{
 }
 
 main .utility{
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -105,6 +118,7 @@ main .util_row{
 }
 
 main .calculator_header{
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   font-family: "Papyrus", fantasy;
@@ -114,12 +128,14 @@ main .calculator_header{
 main .calculator_values{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  gap: 100px;
+  justify-content: space-between;
   font-family: "Papyrus", fantasy;
   color: goldenrod;
 }
 
 main .build_descript_header{
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   font-family: "Papyrus", fantasy;
@@ -141,35 +157,11 @@ main .description_input{
 }
 
 main .submit_upload{
-  width: 150px;
+  width: 200px;
   height: 30px;
   font-family: "Papyrus", fantasy;
   color: goldenrod;
   background-color: dimgray;
   border: 3px solid black;
   margin-bottom: 10px;
-}
-
-
-
-
-footer{
-  display: flex;
-  background-color: dimgray;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 40px;
-}
-
-footer .text-reset{
-  color: goldenrod;
-  font-family: "Papyrus", fantasy;
-  font-size: 20px;
-}
-
-footer a{
-  color: goldenrod;
-  font-family: "Papyrus", fantasy;
-  font-size: 20px;
-  text-decoration: none;
 }

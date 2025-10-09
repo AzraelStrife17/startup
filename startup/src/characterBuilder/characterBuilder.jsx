@@ -4,7 +4,6 @@ import './characterBuilder.css';
 export function CharacterBuilder() {
   return (
     <main>
-
         <span className="login_name">User Logged In</span>
         <h1>Character Builder</h1>
         <h2 className="skill_tree_header">Skill Tree</h2>
@@ -12,17 +11,19 @@ export function CharacterBuilder() {
             <fieldset className="skill_tree"> 
                 <fieldset className="action_skills">
                     <legend>Action Skill</legend>
-                    <label>
-                        <input type="radio" id="actionSkill1" name="varRadio" value="radio1" /> Phase Familiar
-                    </label>
-                    
-                    <label>
-                        <input type="radio" id="actionSkill2" name="varRadio" value="radio2" /> Incarnate
-                    </label>
-                    
-                    <label>
-                        <input type="radio" id="actionSkill3" name="varRadio" value="radio3" /> Dead Ringer
-                    </label>
+                    <div className='action_skill_content'>
+                      <label>
+                          <input type="radio" id="actionSkill1" name="varRadio" value="radio1" /> Phase Familiar
+                      </label>
+                      
+                      <label>
+                          <input type="radio" id="actionSkill2" name="varRadio" value="radio2" /> Incarnate
+                      </label>
+                      
+                      <label>
+                          <input type="radio" id="actionSkill3" name="varRadio" value="radio3" /> Dead Ringer
+                      </label>
+                    </div>
                 </fieldset>
 
 
