@@ -10,27 +10,40 @@ import { About } from './about/about';
 
 export default function App() {
   return (
+    <BrowserRouter>
       <div className="body bg-dark text-light">
         <header>
         <h1>Theory Craft<sup>&reg;</sup></h1>
         <nav>
           <menu>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="characterBuilder.html">Character Builder</a></li>
-            <li><a href="communityBuilds.html">Community Builds</a></li>
-            <li><a href="savedBuilds.html">Saved Builds</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><NavLink to=''>Login</NavLink></li>
+            <li><NavLink to='characterBuilder'>Character Builder</NavLink></li>
+            <li><NavLink to='communityBuilds'>Community Builds</NavLink></li>
+            <li><NavLink to='savedBuilds'>Saved Builds</NavLink></li>
+            <li><NavLink to='about'>About</NavLink></li>
           </menu>
         </nav>
       </header>
 
-        <main>App components go here</main>
+        <Routes>
+          <Route path='/' element={<Login />} exact />
+          <Route path='/characterBuilder' element={<CharacterBuilder />} />
+          <Route path='/communityBuilds' element={<CommunityBuilds />} />
+          <Route path='/savedBuilds' element={<SavedBuilds />} />
+          <Route path='/about' element={<About />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
 
         <footer>
-          <span class="text-reset">Adam Leishman</span>
+          <span className="text-reset">Adam Leishman</span>
           <br />
           <a href="https://github.com/AzraelStrife17/startup">GitHub</a>
         </footer>
       </div>
+    </BrowserRouter>
   );
+
+  function NotFound() {
+    return <main className="container-fluid bg-secondary text-center">404: Return to sender. Address unknown.</main>;
+  }
 }
