@@ -19,33 +19,32 @@ export function CommunityBuilds() {
             
               <tr>
                 <td>
-                  <Link to='/characterBuilder'>Zer0</Link>
+                  <Link className='buildLink' to='/characterBuilder'>Zer0</Link>
                 </td>
                 <td>
-                  <Link to='/characterBuilder'>Elite Endgame Build</Link>
+                  <Link className='buildLink' to='/characterBuilder'>Elite Endgame Build</Link>
                 </td>
                 <td>
-                  <Link to='/characterBuilder'>0123456789</Link>
+                  <Link className='buildLink' to='/characterBuilder'>0123456789</Link>
                 </td>
               </tr>
               
               <tr>
                 <td>
-                  <Link to='/characterBuilder'>Vex</Link>
-                  <button type="submit">Vex</button>
+                  <Link className='buildLink' to='/characterBuilder'>Vex</Link>
                 </td>
                 <td>
-                  <Link to='/characterBuilder'>Best Deadringer Build</Link>
+                  <Link className='buildLink' to='/characterBuilder'>Best Deadringer Build</Link>
                 </td>
                 <td>
-                  <Link to='/characterBuilder'>0123456789</Link>
+                  <Link className='buildLink' to='/characterBuilder'>0123456789</Link>
                 </td>
               </tr>
           </tbody>
         </table>
 
         <div class="search">
-          <input class="search_input" type="text" placeholder="search for builds by username, buildname, or ID"/>
+          <input class="search_input" type="text" placeholder="Search for builds by username, buildname, or ID"/>
         </div>
     </main>
   );

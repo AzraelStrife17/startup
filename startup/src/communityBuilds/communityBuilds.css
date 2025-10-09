@@ -48,28 +48,11 @@ main .search_input{
   font-family: "Papyrus", fantasy;
   border: 5px solid black;
   width: 500px;
-  height: 20px;
-}
-
-
-footer{
-  display: flex;
-  background-color: dimgray;
-  flex-direction: row;
-  justify-content: space-between;
   height: 40px;
 }
 
-footer .text-reset{
-  color: goldenrod;
-  font-family: "Papyrus", fantasy;
-  font-size: 20px;
-}
-
-footer a{
-  color: goldenrod;
-  font-family: "Papyrus", fantasy;
-  font-size: 20px;
+.buildLink{
   text-decoration: none;
+  color: goldenrod
 }
 
