@@ -106,7 +106,7 @@ Handling the toggling of the checkboxes was particularly interesting.
 5.Given this HTML and this CSS how will the images be displayed using flex? Flex will descide how the content within element will be displayey from row to collumn, alignment, and how it scales. <br/>  
 6.What does the following padding CSS do? Can be creating space within the element or increaseing the elements size <br/>  
 7.What does the following code using arrow syntax function declaration do? Uses =>, it inherits this value from an enclosed scope and is a short way to write an expression function. Essentially if the arrow function is within an object it can use this.count to grab the count variable, in a normal function we would have to create another variable within the fucntion equal to this. <br/>  
-8.What does the following code using map with an array output? Creates a new array the same size that transforms the values. For example if our map doubles the number at each index for example 1 at index 0, the new array will have 2 at index 0. <br/>
+8.What does the following code using map with an array output? Creates a new array the same size that transforms the values. For example if our map doubles the number at each index for example 1 at index 0, the new array will have 2 at index 0. <br/>  
 9.What does the following code output using getElementByID and addEventListener? Get elementID searches for the first html object with that ID and eventListener waits for an interaction to occur to perform a task<br/>  
 10.What does the following line of Javascript do using a # selector? document.querySelector() will grab the first element that matches the specified ID, while document.querySelectorAll() will grab a list of all elements that match that ID. <br/>  
 11.Which of the following are true? (mark all that are true about the DOM (Document Object Model)) Answer what he javascript does, Select elements:getElementId, querySelector, change: element.textContent, element.setAttribute(), Change Style: element.style.color, element.classList.add(), Respond: addEventListner() <br/>  
@@ -118,8 +118,8 @@ Handling the toggling of the checkboxes was particularly interesting.
 17.What will the following code output when executed using a for loop and console.log? Identify what will be changed and what the starting and end conditions are and keep track of how the value being changed is logged <br/>  
 18.How would you use JavaScript to select an element with the id of “byu” and change the text color of that element to green? element = getElementById('byu') and element.style.color = 'green'; <br/>  
 19.What is the opening HTML tag for a paragraph, ordered list, unordered list, second level heading, first level heading, third level heading? < p >, < ol >, < ul >, < h2 >, < h1 >, < h3 > <br/>  
-20.How do you declare the document type to be html? <!DOCTYPE html> and followed by an <html> tag <br/>
-21.What is valid javascript syntax for if, else, for, while, switch statements? if (condition){}, if(condition){}else{}, for (let i= 0; i < 10; i++), and while(condition){}, swith (expression){case value1: break; case value2: break; default:} <br/>
+20.How do you declare the document type to be html? <!DOCTYPE html> and followed by an <html> tag <br/>  
+21.What is valid javascript syntax for if, else, for, while, switch statements? if (condition){}, if(condition){}else{}, for (let i= 0; i < 10; i++), and while(condition){}, swith (expression){case value1: break; case value2: break; default:} <br/>  
 22.What is the correct syntax for creating a javascript object? const object = { //key-value paris firstName: 'Jane', age: 30, //Methods greet: function(){return 'Hello, ' + this.firstName;}} <br/>  
 23.Is it possible to add new properties to javascript objects? yes if mutable, example: person.lastName = 'Doe'; <br/>  
 24.If you want to include JavaScript on an HTML page, which tag do you use? <script> tag <br/>  
