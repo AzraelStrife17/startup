@@ -98,7 +98,7 @@ Handling the toggling of the checkboxes was particularly interesting.
   ))}
 </div>
 ```
-##Midterm
+## Midterm
 1.In the following code, what does the link element do?: establishes a linkt from the html to another external source typically css
 2.In the following code,  what does a div tag do? divs group different parts together
 3.In the following code, what is the difference between the #title and .grid selector? title uses and id selector "#" which is primarily used for very specific elements and grid uses a class selector "." which is often used to be reused multiple times
