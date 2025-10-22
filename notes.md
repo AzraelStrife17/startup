@@ -98,3 +98,9 @@ Handling the toggling of the checkboxes was particularly interesting.
   ))}
 </div>
 ```
+##Midterm
+1.In the following code, what does the link element do?: establishes a linkt from the html to another external source typically css
+2.In the following code,  what does a div tag do? divs group different parts together
+3.In the following code, what is the difference between the #title and .grid selector? title uses and id selector "#" and grid uses a class selector "."
+4.In the following code, what is the difference between padding and margin? padding creates space within an element margin creates space outside an element
+      
