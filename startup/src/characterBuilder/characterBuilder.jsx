@@ -16,11 +16,16 @@ export function CharacterBuilder() {
     const recurrenceChange = (event) => {
         setRecurrenceLevel(parseInt(event.target.value) || 0)
     }
+    const [graveAssaultLevel, setGraveAssaultLevel] = useState(0)
+    const graveAssaultChange = (event) => {
+        setGraveAssaultLevel(parseInt(event.target.value) || 0)
+    }
 
     const baseGunDamage = 100;
     const finalGunDamage  = calculateGunDamage(
         baseGunDamage,
         coldIronLevel,
+        graveAssaultLevel,
         graveFiendsLevel,
         recurrenceLevel
     );
@@ -105,13 +110,18 @@ export function CharacterBuilder() {
                 <div className="skill_row2">
                     <div>
                         <label htmlFor="graveAssault">Grave Assault</label>
-                        <select id="graveAssault" name="varSelect">
-                            <option defaultValue>-</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                        <select 
+                            id="graveAssault" 
+                            name="varSelect"
+                            onChange={graveAssaultChange}
+                            value={graveAssaultLevel}
+                            >
+                            <option defaultValue="0">-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
                     </div>
 
@@ -542,7 +552,7 @@ export function CharacterBuilder() {
             <div>HP: 1000</div>
             <div>Shield: 7837</div>
             <div>Melee Damage: 9999 </div>
-            <div>Gun Damage: **{finalGunDamage.toFixed(2)}**</div>
+            <div>Max Potential Gun Damage: **{finalGunDamage.toFixed(2)}**</div>
         </div>
 
         <h2 className="build_descript_header">Build Description</h2>
