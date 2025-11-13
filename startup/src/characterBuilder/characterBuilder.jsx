@@ -1,7 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './characterBuilder.css';
+import { calculateGunDamage } from './damageCalculator.js';
+
 
 export function CharacterBuilder() {
+    const [coldIronLevel, setColdIronLevel] = useState(0)
+    const coldIronChange = (event) => {
+        setColdIronLevel(parseInt(event.target.value) || 0)
+    }
+    const [graveFiendsLevel, setGraveFiends] = useState(0)
+    const graveFiendsChange = (event) => {
+        setGraveFiends(parseInt(event.target.value) || 0)
+    }
+
+    const baseGunDamage = 100;
+    const finalGunDamage  = calculateGunDamage(
+        baseGunDamage,
+        coldIronLevel,
+        graveFiendsLevel,
+    );
   return (
     <main>
         <span className="login_name">User Logged In</span>
@@ -52,13 +69,17 @@ export function CharacterBuilder() {
                     
                     <div>
                         <label htmlFor="coldIron">Cold Iron</label>
-                        <select id="coldIron" name="varSelect">
-                            <option defaultValue>-</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                        <select 
+                            id="coldIron"
+                            name="varSelect"
+                            onChange={coldIronChange}
+                            value={coldIronLevel}>
+                            <option defaultValue="0">-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
                     </div>
 
@@ -125,13 +146,18 @@ export function CharacterBuilder() {
 
                     <div>
                         <label htmlFor="graveFiends">Grave Fiends</label>
-                        <select id="graveFiends" name="varSelect">
-                            <option defaultValue>-</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                        <select 
+                            id="graveFiends" 
+                            name="varSelect"
+                            onChange={graveFiendsChange}
+                            value={graveFiendsLevel}
+                            >
+                            <option defaultValue="0">-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
                     </div>
 
@@ -506,7 +532,7 @@ export function CharacterBuilder() {
             <div>HP: 1000</div>
             <div>Shield: 7837</div>
             <div>Melee Damage: 9999 </div>
-            <div>Gun Damage: 1984</div>
+            <div>Gun Damage: **{finalGunDamage.toFixed(2)}**</div>
         </div>
 
         <h2 className="build_descript_header">Build Description</h2>
