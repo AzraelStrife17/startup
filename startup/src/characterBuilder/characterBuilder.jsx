@@ -12,12 +12,17 @@ export function CharacterBuilder() {
     const graveFiendsChange = (event) => {
         setGraveFiends(parseInt(event.target.value) || 0)
     }
+    const [recurrenceLevel, setRecurrenceLevel] = useState(0)
+    const recurrenceChange = (event) => {
+        setRecurrenceLevel(parseInt(event.target.value) || 0)
+    }
 
     const baseGunDamage = 100;
     const finalGunDamage  = calculateGunDamage(
         baseGunDamage,
         coldIronLevel,
         graveFiendsLevel,
+        recurrenceLevel
     );
   return (
     <main>
@@ -277,7 +282,12 @@ export function CharacterBuilder() {
 
                             <div>
                                 <label htmlFor="recurrence">Recurrence</label>
-                                <select id="recurrence" name="varSelect">
+                                <select 
+                                    id="recurrence" 
+                                    name="varSelect"
+                                    onChange={recurrenceChange}
+                                    value={recurrenceLevel}
+                                    >
                                     <option defaultValue>-</option>
                                     <option>1</option>
                                     <option>2</option>

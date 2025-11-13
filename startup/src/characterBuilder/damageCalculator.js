@@ -1,15 +1,16 @@
 const coldIronBonus = 0.03;
 const graveFiendsBonus = 0.025;
+const recurrenceBonus = 0.16;
 
 /**
  * @param {number} baseDamage
- * @param {number} coldIronLevel
  * @returns {number}
  */
 
-export const calculateGunDamage = (baseDamage, coldIronLevel, graveFiendsLevel) =>{
+export const calculateGunDamage = (baseDamage, coldIronLevel, graveFiendsLevel, recurrenceLevel) =>{
     const totalColdIronBonus = coldIronLevel * coldIronBonus;
     const totalGraveFiendsBonus = graveFiendsLevel * graveFiendsBonus;
+    const totalRecurenceBonus = recurrenceLevel * recurrenceBonus;
 
-    return baseDamage * (1 + totalColdIronBonus) * (1 + totalGraveFiendsBonus);
+    return baseDamage * (1 + totalColdIronBonus) * (1 + totalGraveFiendsBonus) * (1 + totalRecurenceBonus);
 };
