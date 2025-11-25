@@ -11,7 +11,7 @@ const recurrenceBonus = 0.16;
 
 export const calculateGunDamage = (baseDamage, coldIronLevel, graveAssaultLevel, graveFiendsLevel, recurrenceLevel) =>{
     const totalColdIronBonus = coldIronLevel * coldIronBonus;
-    const totalGraveAssaultBonus = graveAssaultLevel * graveAssaultBonus;
+    const totalGraveAssaultBonus = graveAssaultLevel * graveAssaultBonus * 3;
     const totalGraveFiendsBonus = graveFiendsLevel * graveFiendsBonus;
     const totalRecurenceBonus = recurrenceLevel * recurrenceBonus;
 
