@@ -85,7 +85,7 @@ export function CharacterBuilder() {
                             onChange={coldIronChange}
                             value={coldIronLevel}>
                             <option defaultValue="0">-</option>
-                            <option value="1">1</option>
+                            <option value="1">1: +3% gun damage</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
