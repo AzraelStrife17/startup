@@ -86,10 +86,10 @@ export function CharacterBuilder() {
                             value={coldIronLevel}>
                             <option defaultValue="0">-</option>
                             <option value="1">1: +3% gun damage</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
+                            <option value="2">2: +6% gun damage</option>
+                            <option value="3">3: +9% gun damage</option>
+                            <option value="4">4: +12% gun damage</option>
+                            <option value="5">5: +15% gun damage</option>
                         </select>
                     </div>
 
