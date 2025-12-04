@@ -16,15 +16,30 @@ export function CharacterBuilder() {
     const recurrenceChange = (event) => {
         setRecurrenceLevel(parseInt(event.target.value) || 0)
     }
+
+    const [prismaticWeaponryLevel, setPrismaticWeaponryLevel] = useState(0)
+    const prismaticWeaponryChange = (event) => {
+        setPrismaticWeaponryLevel(parseInt(event.target.value) || 0)
+    }
+
+    const [selectedGun, setSelectedGun] = useState(0)
+    const selectedGunChange = (event) => {
+        setSelectedGun(parseInt(event.target.value) || 0)
+    }
     
 
-    const baseGunDamage = 100;
+    const baseGunDamage = selectedGun;
     const finalGunDamage  = calculateGunDamage(
         baseGunDamage,
         coldIronLevel,
         graveFiendsLevel,
-        recurrenceLevel
+        recurrenceLevel,
+        prismaticWeaponryLevel
     );
+
+
+
+
   return (
     <main>
         <span className="login_name">User Logged In</span>
@@ -330,11 +345,11 @@ export function CharacterBuilder() {
                                 <label htmlFor="burntOffering">Burnt Offering</label>
                                 <select id="burntOffering" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                                 </select>
                             </div>
 
@@ -353,13 +368,17 @@ export function CharacterBuilder() {
                         <div className="skill_row1">
                             <div>
                                 <label htmlFor="prismaticWeaponry">Prismatic Weaponry</label>
-                                <select id="prismaticWeaponry" name="varSelect">
+                                <select 
+                                    id="prismaticWeaponry" 
+                                    name="varSelect"
+                                    onChange={prismaticWeaponryChange}
+                                    value={setPrismaticWeaponryLevel}>
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                                 </select>
                             </div>
                             
@@ -433,13 +452,17 @@ export function CharacterBuilder() {
                 <div className="weapon_row">
                     <div>
                         <label htmlFor="weapon1">Weapon Slot 1</label>
-                        <select id="weapon1" name="varSelect">
+                        <select 
+                            id="weapon1" 
+                            name="varSelect"
+                            onChange={selectedGunChange}
+                            value={selectedGun}>
                             <option defaultValue>-</option>
-                            <option>AR</option>
-                            <option>Shotgun</option>
-                            <option>SMG</option>
-                            <option>Pistol</option>
-                            <option>Sniper</option>
+                            <option value="401">Aegon: 401 damage</option>
+                            <option value="2000">Lead: 2000 x 3 damage</option>
+                            <option value="657">Darkbeast: 657 x 2</option>
+                            <option value="4">Pistol</option>
+                            <option value="5">Sniper</option>
                         </select>
                     </div>
 
@@ -447,7 +470,7 @@ export function CharacterBuilder() {
                         <label htmlFor="weapon2">Weapon Slot 2</label>
                         <select id="weapon2" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>AR</option>
+                            <option>Aegon</option>
                             <option>Shotgun</option>
                             <option>SMG</option>
                             <option>Pistol</option>
