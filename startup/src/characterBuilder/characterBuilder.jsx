@@ -457,12 +457,12 @@ export function CharacterBuilder() {
                             name="varSelect"
                             onChange={selectedGunChange}
                             value={selectedGun}>
-                            <option defaultValue>-</option>
+                            <option defaultValue>Use This Slot for Calculation</option>
                             <option value="401">Aegon: 401 damage</option>
                             <option value="2000">Lead: 2000 x 3 damage</option>
-                            <option value="657">Darkbeast: 657 x 2</option>
-                            <option value="4">Pistol</option>
-                            <option value="5">Sniper</option>
+                            <option value="657">Darkbeast: 657 x 2 damage</option>
+                            <option value="743">Zipper: 743 damage</option>
+                            <option value="14233">Stray: 14233 x 3</option>
                         </select>
                     </div>
 
@@ -470,11 +470,11 @@ export function CharacterBuilder() {
                         <label htmlFor="weapon2">Weapon Slot 2</label>
                         <select id="weapon2" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>Aegon</option>
-                            <option>Shotgun</option>
-                            <option>SMG</option>
-                            <option>Pistol</option>
-                            <option>Sniper</option>
+                            <option value="401">Aegon: 401 damage</option>
+                            <option value="2000">Lead: 2000 x 3 damage</option>
+                            <option value="657">Darkbeast: 657 x 2 damage</option>
+                            <option value="743">Zipper: 743 damage</option>
+                            <option value="14233">Stray: 14233 x 3</option>
                         </select>
                     </div>
                 </div>
@@ -484,11 +484,11 @@ export function CharacterBuilder() {
                         <label htmlFor="weapon3">Weapon Slot 3</label>
                         <select id="weapon3" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>AR</option>
-                            <option>Shotgun</option>
-                            <option>SMG</option>
-                            <option>Pistol</option>
-                            <option>Sniper</option>
+                            <option value="401">Aegon: 401 damage</option>
+                            <option value="2000">Lead: 2000 x 3 damage</option>
+                            <option value="657">Darkbeast: 657 x 2 damage</option>
+                            <option value="743">Zipper: 743 damage</option>
+                            <option value="14233">Stray: 14233 x 3</option>
                         </select>
                     </div>
 
@@ -496,11 +496,11 @@ export function CharacterBuilder() {
                         <label htmlFor="weapon4">Weapon Slot 4</label>
                         <select id="weapon4" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>AR</option>
-                            <option>Shotgun</option>
-                            <option>SMG</option>
-                            <option>Pistol</option>
-                            <option>Sniper</option>
+                            <option value="401">Aegon: 401 damage</option>
+                            <option value="2000">Lead: 2000 x 3 damage</option>
+                            <option value="657">Darkbeast: 657 x 2 damage</option>
+                            <option value="743">Zipper: 743 damage</option>
+                            <option value="14233">Stray: 14233 x 3</option>
                         </select>
                     </div>
                 </div>
@@ -566,7 +566,7 @@ export function CharacterBuilder() {
             <div>HP: 1000</div>
             <div>Shield: 7837</div>
             <div>Melee Damage: 9999 </div>
-            <div>Max Potential Gun Damage: **{finalGunDamage.toFixed(2)}**</div>
+            <div>Max Potential Gun Damage: {finalGunDamage.toFixed(2)}</div>
         </div>
 
         <h2 className="build_descript_header">Build Description</h2>

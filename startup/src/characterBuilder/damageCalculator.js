@@ -15,7 +15,7 @@ export const calculateGunDamage = (baseDamage, coldIronLevel, graveFiendsLevel, 
     const totalRecurenceBonus = recurrenceLevel * recurrenceBonus * 50;
     const totalPrismaticWeaponryBonus = prismaticWeaponryLevel * prismaticWeaponryBonus;
 
-    if (baseDamage === 2000){
+    if (baseDamage === 2000 || baseDamage === 14233 ){
         return baseDamage * (1 + totalColdIronBonus) * (1 + totalGraveFiendsBonus) * (1 + totalRecurenceBonus) * (1 + totalPrismaticWeaponryBonus) * 3;
     }
 
