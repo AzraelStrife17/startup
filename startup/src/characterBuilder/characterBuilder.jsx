@@ -275,9 +275,9 @@ export function CharacterBuilder() {
                                 <label htmlFor="shotGo">Shot To Go</label>
                                 <select id="shotGo" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
+                                    <option>1: +15% ammo restored when swapping weapons</option>
+                                    <option>2: +30% ammo restored when swapping weapons</option>
+                                    <option>3: +45% ammo restored when swapping weapons</option>
                                 </select>
                             </div>
                         </div>
@@ -287,11 +287,11 @@ export function CharacterBuilder() {
                                 <label htmlFor="necrosis">Necrosis</label>
                                 <select id="necrosis" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option>1: +8% increase Corrosive Damage & +6% Corrosive Status Effect Damage</option>
+                                    <option>2: +16% increase Corrosive Damage & +12% Corrosive Status Effect Damage</option>
+                                    <option>3: +24% increase Corrosive Damage & +18% Corrosive Status Effect Damage</option>
+                                    <option>4: +32% increase Corrosive Damage & +24% Corrosive Status Effect Damage</option>
+                                    <option>5: +40% increase Corrosive Damage & +30% Corrosive Status Effect Damage</option>
                                 </select>
                             </div>
                         </div>
@@ -304,11 +304,11 @@ export function CharacterBuilder() {
                                 <label htmlFor="burningAttunment">Burning Attunement</label>
                                 <select id="burningAttunment" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option>1: +6% Incendiary Crit Damage & +7% Status Effect Chance</option>
+                                    <option>2: +12% Incendiary Crit Damage & +14% Status Effect Chance</option>
+                                    <option>3: +18% Incendiary Crit Damage & +21% Status Effect Chance</option>
+                                    <option>4: +24% Incendiary Crit Damage & +28% Status Effect Chance</option>
+                                    <option>5: +32% Incendiary Crit Damage & +35% Status Effect Chance</option>
                                 </select>
                             </div>
 
@@ -321,11 +321,11 @@ export function CharacterBuilder() {
                                     value={recurrenceLevel}
                                     >
                                     <option defaultValue>-</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
+                                    <option value="1">1: +0.16% Gun Damage Per Stack & +0.2% Melee Damage Per Stack: 50 Stacks Max</option>
+                                    <option value="2">2: +0.32% Gun Damage Per Stack & +0.4% Melee Damage Per Stack: 50 Stacks Max</option>
+                                    <option value="3">3: +0.48% Gun Damage Per Stack & +0.6% Melee Damage Per Stack: 50 Stacks Max</option>
+                                    <option value="4">4: +0.64% Gun Damage Per Stack & +0.8% Melee Damage Per Stack: 50 Stacks Max</option>
+                                    <option value="5">5: +0.80% Gun Damage Per Stack & +1% Melee Damage Per Stack: 50 Stacks Max</option>
                                 </select>
                             </div>
                         </div>
@@ -335,11 +335,11 @@ export function CharacterBuilder() {
                                 <label htmlFor="reverburnations">Reverburnations</label>
                                 <select id="reverburnations" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option>1: 50% Chance for Melee to Inflict Incendiary Damage: +30% Melee Damage</option>
+                                    <option>2: 50% Chance for Melee to Inflict Incendiary Damage: +60% Melee Damage</option>
+                                    <option>3: 50% Chance for Melee to Inflict Incendiary Damage: +90% Melee Damage</option>
+                                    <option>4: 50% Chance for Melee to Inflict Incendiary Damage: +120% Melee Damage</option>
+                                    <option>5: 50% Chance for Melee to Inflict Incendiary Damage: +150% Melee Damage</option>
                                 </select>
                             </div>
 
@@ -347,11 +347,11 @@ export function CharacterBuilder() {
                                 <label htmlFor="haruspex">Haruspex</label>
                                 <select id="haruspex" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option>1: Melee Replace by Dagger: 207 Damage</option>
+                                    <option>2: Melee Replace by Dagger: 414 Damage</option>
+                                    <option>3: Melee Replace by Dagger: 621 Damage</option>
+                                    <option>4: Melee Replace by Dagger: 828 Damage</option>
+                                    <option>5: Melee Replace by Dagger: 1035 Damage</option>
                                 </select>
                             </div>
                         </div>
@@ -361,11 +361,11 @@ export function CharacterBuilder() {
                                 <label htmlFor="burntOffering">Burnt Offering</label>
                                 <select id="burntOffering" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
+                                    <option value="1">1: +8% Incidenary Damage & +6% Incidenary Status Effect Damage</option>
+                                    <option value="2">2: +16% Incidenary Damage & +12% Incidenary Status Effect Damage</option>
+                                    <option value="3">3: +24% Incidenary Damage & +18% Incidenary Status Effect Damage</option>
+                                    <option value="4">4: +32% Incidenary Damage & +24% Incidenary Status Effect Damage</option>
+                                    <option value="5">5: +40% Incidenary Damage & +30% Incidenary Status Effect Damage</option>
                                 </select>
                             </div>
 
@@ -373,7 +373,7 @@ export function CharacterBuilder() {
                                 <label htmlFor="pincushion">Pincushion</label>
                                 <select id="pincushion" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
+                                    <option>1: Haruspex Throws 5 Daggers From Both Hands</option>
                                 </select>
                             </div>
                         </div>
@@ -390,11 +390,11 @@ export function CharacterBuilder() {
                                     onChange={prismaticWeaponryChange}
                                     value={setPrismaticWeaponryLevel}>
                                     <option defaultValue>-</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
+                                    <option value="1">1: +6% Gun Bonus Damage</option>
+                                    <option value="2">2: +12% Gun Bonus Damage</option>
+                                    <option value="3">3: +18% Gun Bonus Damage</option>
+                                    <option value="4">4: +24% Gun Bonus Damage</option>
+                                    <option value="5">5: +30% Gun Bonus Damage</option>
                                 </select>
                             </div>
                             
@@ -403,11 +403,11 @@ export function CharacterBuilder() {
                                 <label htmlFor="obedientFiends">Obedient Fiends</label>
                                 <select id="obedientFiends" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option>1: +7% Minion Damage</option>
+                                    <option>2: +14% Minion Damage</option>
+                                    <option>3: +21% Minion Damage</option>
+                                    <option>4: +28% Minion Damage</option>
+                                    <option>5: +35% Minion Damage</option>
                                 </select>
                             </div>
                         </div>
@@ -417,9 +417,9 @@ export function CharacterBuilder() {
                                 <label htmlFor="spiritBomb">Spirit Bomb</label>
                                 <select id="spiritBomb" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
+                                    <option>1: +12% Reaper Minion Health</option>
+                                    <option>2: +24% Reaper Minion HP</option>
+                                    <option>3: +24% Reaper Minion HP</option>
                                 </select>
                             </div>
 
@@ -427,11 +427,11 @@ export function CharacterBuilder() {
                                 <label htmlFor="ancientRites">Ancient Rites</label>
                                 <select id="ancientRites" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option>1: +0.2% Minion Damage Per Stack: 40 Stacks Max</option>
+                                    <option>2: +0.4% Minion Damage Per Stack: 40 Stacks Max</option>
+                                    <option>3: +0.6% Minion Damage Per Stack: 40 Stacks Max</option>
+                                    <option>4: +0.8% Minion Damage Per Stack: 40 Stacks Max</option>
+                                    <option>5: +1% Minion Damage Per Stack: 40 Stacks Max</option>
                                 </select>
                             </div>
 
@@ -439,9 +439,9 @@ export function CharacterBuilder() {
                                 <label htmlFor="deathCloser">Death Follows Closer</label>
                                 <select id="deathCloser" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
+                                    <option>1: Minion Spawn When Damge Taken: 120 Sec Cooldown</option>
+                                    <option>2: Minion Spawn When Damge Taken: 100 Sec Cooldown</option>
+                                    <option>3: Minion Spawn When Damge Taken: 80 Sec Cooldown</option>
                                 </select>
                             </div>
                         </div>
@@ -451,7 +451,7 @@ export function CharacterBuilder() {
                                 <label htmlFor="diener">Diener</label>
                                 <select id="diener" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
+                                    <option>1: Summon Additional Minion</option>
                                 </select>
                             </div>
                         </div>
