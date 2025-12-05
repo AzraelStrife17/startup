@@ -22,7 +22,7 @@ main .skill_tree_header{
 main .skill_tree{
     font-family: "Papyrus", fantasy;
     color: goldenrod;
-    width: 1500px;
+    width: 80vw;
     border: 3px solid white;
 }
 
@@ -72,7 +72,10 @@ main .mastery_tree{
   text-align: center;
   border: .1px solid white;
   width: 90%;
-  max-width: 500px;
+}
+
+main select{
+  width: 30px;
 }
 
 main .equipment_header{

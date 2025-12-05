@@ -227,11 +227,11 @@ export function CharacterBuilder() {
                                 <label htmlFor="blightAttunement">Blight Attunement</label>
                                 <select id="blightAttunement" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option>1: 52 Corrosive DPS</option>
+                                    <option>2: 104 Corrosive DPS</option>
+                                    <option>3: 156 Corrosive DPS</option>
+                                    <option>4: 208 Corrosive DPS</option>
+                                    <option>5: 260 Corrosive DPS</option>
                                 </select>
                             </div>
                             
@@ -239,11 +239,11 @@ export function CharacterBuilder() {
                                 <label htmlFor="prismaticIchor">Prismatic Ichor</label>
                                 <select id="prismaticIchor" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option>1: +30% Status Effect Damage</option>
+                                    <option>2: +60% Status Effect Damage</option>
+                                    <option>3: +90% Status Effect Damage</option>
+                                    <option>4: +120% Status Effect Damage</option>
+                                    <option>5: +150% Status Effect Damage</option>
                                 </select>
                             </div>
                         </div>
@@ -253,11 +253,11 @@ export function CharacterBuilder() {
                                 <label htmlFor="keenSuffering">Keen Suffering</label>
                                 <select id="keenSuffering" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option>1: +4% Crit Chance</option>
+                                    <option>2: +8% Crit Chance</option>
+                                    <option>3: +12% Crit Chance</option>
+                                    <option>4: +16% Crit Chance</option>
+                                    <option>5: +20% Crit Chance</option>
                                 </select>
                             </div>
 
@@ -265,9 +265,9 @@ export function CharacterBuilder() {
                                 <label htmlFor="ghasterBait">Ghaster Bait</label>
                                 <select id="ghasterBait" name="varSelect">
                                     <option defaultValue>-</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
+                                    <option>1: 120 Sec Spectre Cooldown</option>
+                                    <option>2: 100 Sec Spectre Cooldown</option>
+                                    <option>3: 80 Sec Spectre Cooldown</option>
                                 </select>
                             </div>
 
