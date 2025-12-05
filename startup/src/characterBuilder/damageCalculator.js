@@ -5,24 +5,25 @@ const prismaticWeaponryBonus = 0.06;
 
 
 /**
- * @param {number} baseDamage
+ * @param {number} baseGunDamage
+ * @param {number} baseMeleeDamage
  * @returns {number}
  */
 
-export const calculateGunDamage = (baseDamage, coldIronLevel, graveFiendsLevel, recurrenceLevel, prismaticWeaponryLevel) =>{
+export const calculateGunDamage = (baseGunDamage, coldIronLevel, graveFiendsLevel, recurrenceLevel, prismaticWeaponryLevel) =>{
     const totalColdIronBonus = coldIronLevel * coldIronBonus;
     const totalGraveFiendsBonus = graveFiendsLevel * graveFiendsBonus;
     const totalRecurenceBonus = recurrenceLevel * recurrenceBonus * 50;
     const totalPrismaticWeaponryBonus = prismaticWeaponryLevel * prismaticWeaponryBonus;
 
-    if (baseDamage === 2000 || baseDamage === 14233 ){
-        return baseDamage * (1 + totalColdIronBonus) * (1 + totalGraveFiendsBonus) * (1 + totalRecurenceBonus) * (1 + totalPrismaticWeaponryBonus) * 3;
+    if (baseGunDamage === 2000 || baseGunDamage === 14233 ){
+        return baseGunDamage * (1 + totalColdIronBonus) * (1 + totalGraveFiendsBonus) * (1 + totalRecurenceBonus) * (1 + totalPrismaticWeaponryBonus) * 3;
     }
 
-    if (baseDamage === 657){
-        return baseDamage * (1 + totalColdIronBonus) * (1 + totalGraveFiendsBonus) * (1 + totalRecurenceBonus) * (1 + totalPrismaticWeaponryBonus) * 2;
+    if (baseGunDamage === 657){
+        return baseGunDamage * (1 + totalColdIronBonus) * (1 + totalGraveFiendsBonus) * (1 + totalRecurenceBonus) * (1 + totalPrismaticWeaponryBonus) * 2;
     }
 
-
-    return baseDamage * (1 + totalColdIronBonus) * (1 + totalGraveFiendsBonus) * (1 + totalRecurenceBonus) * (1 + totalPrismaticWeaponryBonus);
+    return baseGunDamage * (1 + totalColdIronBonus) * (1 + totalGraveFiendsBonus) * (1 + totalRecurenceBonus) * (1 + totalPrismaticWeaponryBonus);
 };
+

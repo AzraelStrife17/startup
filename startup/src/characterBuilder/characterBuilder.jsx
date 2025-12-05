@@ -40,6 +40,8 @@ export function CharacterBuilder() {
 
 
 
+
+
   return (
     <main>
         <span className="login_name">User Logged In</span>
@@ -513,11 +515,10 @@ export function CharacterBuilder() {
                         <label htmlFor="shield">Shield</label>
                         <select id="shield" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>Shield 1</option>
-                            <option>Shield 2</option>
-                            <option>Shield 3</option>
-                            <option>Shield 4</option>
-                            <option>Shield 5</option>
+                            <option>Firewerks</option>
+                            <option>Cindershelly</option>
+                            <option>Guardian Angel</option>
+                            <option>Heavyweight</option>
                         </select>
                     </div>
 
@@ -525,11 +526,10 @@ export function CharacterBuilder() {
                         <label htmlFor="revKit">Rev Kit</label>
                         <select id="revKit" name="varSelect"> 
                             <option defaultValue>-</option>
-                            <option>Rev Kit 1</option>
-                            <option>Rev Kit 2</option>
-                            <option>Rev Kit 3</option>
-                            <option>Rev Kit 4</option>
-                            <option>Rev Kit 5</option>
+                            <option>AF1000</option>
+                            <option>Kill Spring</option>
+                            <option>Pacemaker</option>
+                            <option>Blood Analyzer</option>
                         </select>
                     </div>
                 </div>
@@ -539,10 +539,10 @@ export function CharacterBuilder() {
                         <label htmlFor="ordinance">Ordinance</label>
                         <select id="ordinance" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>Rocket Launcher</option>
-                            <option>Grenade</option>
-                            <option>Throwing Knife</option>
-                            <option>Minigun</option>
+                            <option>Atling Gun</option>
+                            <option>Chaumurky</option>
+                            <option>JSho Kunai</option>
+                            <option>Inkling</option>
                         </select>
                     </div>
 
@@ -550,11 +550,10 @@ export function CharacterBuilder() {
                         <label htmlFor="classMod">Class Mod</label>
                         <select id="classMod" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>Mod 1</option>
-                            <option>Mod 2</option>
-                            <option>Mod 3</option>
-                            <option>Mod 4</option>
-                            <option>Mod 5</option>
+                            <option>Avatar</option>
+                            <option>Technomancer</option>
+                            <option>Undead Eye</option>
+                            <option>Illusionist</option>
                         </select>
                     </div>
                 </div>
