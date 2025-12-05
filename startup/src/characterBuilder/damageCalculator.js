@@ -27,6 +27,15 @@ export const calculateGunDamage = (baseGunDamage, coldIronLevel, graveFiendsLeve
     return baseGunDamage * (1 + totalColdIronBonus) * (1 + totalGraveFiendsBonus) * (1 + totalRecurenceBonus) * (1 + totalPrismaticWeaponryBonus);
 };
 
-export const calculateMeleeDamage = (baseMeleeDamage) => {
-    return baseMeleeDamage
+const fellInscriptionBonus = 0.07;
+
+export const calculateMeleeDamage = (baseMeleeDamage, fellInscriptionLevel) => {
+
+    let totalFellInscriptionBonus = fellInscriptionLevel * fellInscriptionBonus;
+
+    if (fellInscriptionLevel === 5){
+        totalFellInscriptionBonus -= 0.03;
+    }
+
+    return baseMeleeDamage * (1 + totalFellInscriptionBonus)
 }

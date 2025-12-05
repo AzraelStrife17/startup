@@ -38,14 +38,17 @@ export function CharacterBuilder() {
         prismaticWeaponryLevel
     );
 
+
+    const [fellInscriptionLevel, setFellInscriptionLevel] = useState(0)
+    const fellInscriptionChange = (event) => {
+        setFellInscriptionLevel(parseInt(event.target.value) || 0)
+    }
+
     const baseMeleeDamage = 100;
     const finalMeleeDamage = calculateMeleeDamage(
-        baseMeleeDamage
+        baseMeleeDamage,
+        fellInscriptionLevel
     );
-
-
-
-
 
 
   return (
@@ -90,9 +93,9 @@ export function CharacterBuilder() {
                         <label htmlFor="idleHands">Idle Hands</label>
                         <select id="idleHands" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                            <option>1: +12% reload</option>
+                            <option>2: +22% reload</option>
+                            <option>3: +30% reload</option>
                         </select>
                     </div>
                     
@@ -114,13 +117,17 @@ export function CharacterBuilder() {
 
                     <div>
                         <label htmlFor="fellInscription">Fell Inscription</label>
-                        <select id="fellInscription" name="varSelect">
+                        <select 
+                            id="fellInscription" 
+                            name="varSelect"
+                            onChange={fellInscriptionChange}
+                            value={fellInscriptionLevel}>
                             <option defaultValue>-</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <option value="1">1: +7% Melee & +6% HP</option>
+                            <option value="2">2: +14% Melee & +12% HP</option>
+                            <option value="3">3: +21% Melee & +18% HP</option>
+                            <option value="4">4: +28% Melee & +24% HP</option>
+                            <option value="5">5: +32% Melee & +30% HP</option>
                         </select>
                     </div>
 
