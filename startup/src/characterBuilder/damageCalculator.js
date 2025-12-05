@@ -29,7 +29,7 @@ export const calculateGunDamage = (baseGunDamage, coldIronLevel, graveFiendsLeve
 
 const fellInscriptionBonus = 0.07;
 
-export const calculateMeleeDamage = (baseMeleeDamage, fellInscriptionLevel) => {
+export const calculateMeleeDamage = (baseMeleeDamage, fellInscriptionLevel, graveFiendsLevel) => {
 
     let totalFellInscriptionBonus = fellInscriptionLevel * fellInscriptionBonus;
 
@@ -37,5 +37,7 @@ export const calculateMeleeDamage = (baseMeleeDamage, fellInscriptionLevel) => {
         totalFellInscriptionBonus -= 0.03;
     }
 
-    return baseMeleeDamage * (1 + totalFellInscriptionBonus)
+    const totalGraveFiendsBonus = graveFiendsLevel * graveFiendsBonus;
+
+    return baseMeleeDamage * (1 + totalFellInscriptionBonus) * (1 + totalGraveFiendsBonus)
 }

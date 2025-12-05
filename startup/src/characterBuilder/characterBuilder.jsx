@@ -47,7 +47,8 @@ export function CharacterBuilder() {
     const baseMeleeDamage = 100;
     const finalMeleeDamage = calculateMeleeDamage(
         baseMeleeDamage,
-        fellInscriptionLevel
+        fellInscriptionLevel,
+        graveFiendsLevel
     );
 
 
@@ -138,11 +139,11 @@ export function CharacterBuilder() {
                         <label htmlFor="graveAssault">Grave Assault</label>
                         <select >
                             <option defaultValue="0">-</option>
-                            <option value="1">1:</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
+                            <option value="1">1: +1.5% fire rate</option>
+                            <option value="2">2: 3.0% fire rate</option>
+                            <option value="3">3: 4.5% fire rate</option>
+                            <option value="4">4: 6.0% fire rate</option>
+                            <option value="5">5: 7.5% fire rate</option>
                         </select>
                     </div>
 
@@ -150,11 +151,11 @@ export function CharacterBuilder() {
                         <label htmlFor="portentsSuffering">Portents of Suffering</label>
                         <select id="portentsSuffering" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <option>1: +7% status effect damage</option>
+                            <option>2: +14% status effect damage</option>
+                            <option>3: +21% status effect damage</option>
+                            <option>4: +28% status effect damage</option>
+                            <option>5: +35% status effect damage</option>
                         </select>
                     </div>
                     
@@ -162,11 +163,11 @@ export function CharacterBuilder() {
                         <label htmlFor="cursedBlade">Cursed Blade</label>
                         <select id="cursedBlade" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <option>1: 16 curse damge per second</option>
+                            <option>2: 32 curse damge per second</option>
+                            <option>3: 48 curse damge per second</option>
+                            <option>4: 64 curse damge per second</option>
+                            <option>5: 80 curse damge per second</option>
                         </select>
                     </div>
                 </div>
@@ -176,7 +177,7 @@ export function CharacterBuilder() {
                         <label htmlFor="bloodSacrifice">Blood Sacrifice</label>
                         <select id="bloodSacrifice" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>1</option>
+                            <option>1: Kill Skills Trigger When Minions Die</option>
                         </select>
                     </div>
 
@@ -189,11 +190,11 @@ export function CharacterBuilder() {
                             value={graveFiendsLevel}
                             >
                             <option defaultValue="0">-</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
+                            <option value="1">1: +2.5% damage per stack</option>
+                            <option value="2">2: +5% damage per stack</option>
+                            <option value="3">3: +7.5% damage per stack</option>
+                            <option value="4">4: +10% damage per stack</option>
+                            <option value="5">5: +12.5% damage per stack</option>
                         </select>
                     </div>
 
@@ -201,11 +202,11 @@ export function CharacterBuilder() {
                         <label htmlFor="graveQuickening">Grave Quickening</label>
                         <select id="graveQuickening" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <option>1: +3.5% skill cooldown</option>
+                            <option>2: +7% skill cooldown</option>
+                            <option>3: +10.5% skill cooldown</option>
+                            <option>4: +14% skill cooldown</option>
+                            <option>5: +17.5% skill cooldown</option>
                         </select>
                     </div>
 
@@ -213,7 +214,7 @@ export function CharacterBuilder() {
                         <label htmlFor="extraCursed">Extra Cursed</label>
                         <select id="extraCursed" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>1</option>
+                            <option>1: +200% curse crit damage</option>
                         </select>
                     </div>
                 </div>

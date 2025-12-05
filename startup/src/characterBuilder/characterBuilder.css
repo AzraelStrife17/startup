@@ -22,6 +22,7 @@ main .skill_tree_header{
 main .skill_tree{
     font-family: "Papyrus", fantasy;
     color: goldenrod;
+    width: 1500px;
     border: 3px solid white;
 }
 
