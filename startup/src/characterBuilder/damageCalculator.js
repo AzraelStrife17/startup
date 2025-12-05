@@ -27,3 +27,6 @@ export const calculateGunDamage = (baseGunDamage, coldIronLevel, graveFiendsLeve
     return baseGunDamage * (1 + totalColdIronBonus) * (1 + totalGraveFiendsBonus) * (1 + totalRecurenceBonus) * (1 + totalPrismaticWeaponryBonus);
 };
 
+export const calculateMeleeDamage = (baseMeleeDamage) => {
+    return baseMeleeDamage
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './characterBuilder.css';
 import { calculateGunDamage } from './damageCalculator.js';
+import { calculateMeleeDamage } from './damageCalculator.js';
 
 
 export function CharacterBuilder() {
@@ -35,6 +36,11 @@ export function CharacterBuilder() {
         graveFiendsLevel,
         recurrenceLevel,
         prismaticWeaponryLevel
+    );
+
+    const baseMeleeDamage = 100;
+    const finalMeleeDamage = calculateMeleeDamage(
+        baseMeleeDamage
     );
 
 
@@ -72,11 +78,11 @@ export function CharacterBuilder() {
                         <label htmlFor="sanguineFiends">Sanguine Fiends</label>
                         <select id="sanguineFiends" name="varSelect">
                             <option defaultValue>-</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <option>1: +4% hp regen</option>
+                            <option>2: +8% hp regen</option>
+                            <option>3: +12% hp regen</option>
+                            <option>4: +16% hp regen</option>
+                            <option>5: +20% hp regen</option>
                         </select>
                     </div>
                     
@@ -564,7 +570,7 @@ export function CharacterBuilder() {
         <div className="calculator_values">
             <div>HP: 1000</div>
             <div>Shield: 7837</div>
-            <div>Melee Damage: 9999 </div>
+            <div>Melee Damage: {finalMeleeDamage.toFixed(2)} </div>
             <div>Max Potential Gun Damage: {finalGunDamage.toFixed(2)}</div>
         </div>
 
